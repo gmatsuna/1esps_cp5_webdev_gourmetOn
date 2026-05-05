@@ -1,14 +1,36 @@
 export default function Hero() {
   return (
     <>
-      <section id="hero" className="relative pt-40 pb-32 flex items-center bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600')]">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
+      <section 
+        id="hero" 
+        // Usamos h-[33vh] para fixar em 1/3 da tela. 
+        // Reduzimos o padding vertical drasticamente (py-8).
+        className="relative h-[33vh] mt-4 flex items-center bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600')]"
+      >
+        {/* Overlay um pouco mais escura para garantir contraste em espaÁo menor */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+        
         <div className="container mx-auto px-6 relative z-10">
-          <h1 className="text-6xl font-bold text-white mb-4">Comida de Chef,<br/><span className="text-lime-400">na sua Mesa.</span></h1>
-          <p className="text-xl text-gray-300 max-w-lg mb-8">Pe√ßa os melhores pratos dos restaurantes mais exclusivos da cidade com entrega ultra-r√°pida.</p>
-          <button className="bg-lime-400 text-black px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition cursor-pointer">Download App</button>
+          <div className="max-w-xl"> {/* Limitador de largura ligeiramente menor */}
+            
+            {/* TÕTULO: Reduzido de text-6xl para text-4xl (e 3xl no mobile) */}
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight">
+              Comida de Chef,<br/>
+              <span className="text-lime-400">na sua Mesa.</span>
+            </h1>
+            
+            {/* PAR¡GRAFO: Reduzido de text-xl para text-base e margem menor (mb-5) */}
+            <p className="text-base text-gray-300 max-w-lg mb-5 leading-relaxed">
+              Os melhores pratos dos restaurantes exclusivos da cidade com entrega ultra-r·pida.
+            </p>
+            
+            {/* BOT√O: Reduzido padding (px-6 py-3) e tamanho da fonte (text-base) */}
+            <button className="bg-lime-400 text-black px-6 py-3 rounded-full font-bold text-base hover:scale-105 transition cursor-pointer shadow-lg shadow-lime-400/20">
+              Download App
+            </button>
+          </div>
         </div>
-    </section>
+      </section>
     </>
   );
 }
