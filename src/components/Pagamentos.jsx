@@ -1,7 +1,5 @@
 const Pagamentos = () => {
-  return (
-    <div>Pagamentos</div>
-  )
-}
+  return <div>Pagamentos</div>;
+};
 
-export default Pagamentos
+export default Pagamentos;

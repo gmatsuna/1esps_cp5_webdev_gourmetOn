@@ -1,7 +1,5 @@
 const Variedades = () => {
-  return (
-    <div>Variedades</div>
-  )
-}
+  return <div>Variedades</div>;
+};
 
-export default Variedades
+export default Variedades;

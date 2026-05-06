@@ -1,58 +1,64 @@
-import { Search, Filter, Bell, Heart, Star, Smartphone } from 'lucide-react';
+import { Search, Filter, Bell, Heart, Star, Smartphone } from "lucide-react";
 
 const Funcionalidades = () => {
   const features = [
     {
       icon: <Search className="text-lime-600" size={24} />,
       title: "Busca Inteligente",
-      description: "Encontre exatamente o que deseja buscando por prato, ingrediente ou restaurante."
+      description:
+        "Encontre exatamente o que deseja buscando por prato, ingrediente ou restaurante.",
     },
     {
       icon: <Filter className="text-lime-600" size={24} />,
-      title: "Filtros Avançados",
-      description: "Refine sua escolha por preço, tempo de entrega, avaliação ou restrições alimentares."
+      title: "Filtros Avanï¿½ados",
+      description:
+        "Refine sua escolha por preï¿½o, tempo de entrega, avaliaï¿½ï¿½o ou restriï¿½ï¿½es alimentares.",
     },
     {
       icon: <Bell className="text-lime-600" size={24} />,
       title: "Status em Tempo Real",
-      description: "Receba notificações desde o preparo na cozinha até a chegada na sua porta."
+      description:
+        "Receba notificaï¿½ï¿½es desde o preparo na cozinha atï¿½ a chegada na sua porta.",
     },
     {
       icon: <Heart className="text-lime-600" size={24} />,
       title: "Favoritos",
-      description: "Salve seus pratos e restaurantes preferidos para pedir novamente em segundos."
+      description:
+        "Salve seus pratos e restaurantes preferidos para pedir novamente em segundos.",
     },
     {
       icon: <Star className="text-lime-600" size={24} />,
-      title: "Avaliações Reais",
-      description: "Confira fotos e opiniões de outros clientes para garantir a melhor experiência."
+      title: "Avaliaï¿½ï¿½es Reais",
+      description:
+        "Confira fotos e opiniï¿½es de outros clientes para garantir a melhor experiï¿½ncia.",
     },
     {
       icon: <Smartphone className="text-lime-600" size={24} />,
-      title: "Experiência Mobile",
-      description: "Interface otimizada para você pedir de qualquer lugar com total fluidez."
-    }
+      title: "Experiï¿½ncia Mobile",
+      description:
+        "Interface otimizada para vocï¿½ pedir de qualquer lugar com total fluidez.",
+    },
   ];
   return (
     <section id="funcionalidades" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        
-        {/* Cabeçalho da Seção */}
+        {/* Cabeï¿½alho da Seï¿½ï¿½o */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Tudo o que você precisa em <span className="text-lime-500">um só app.</span>
+            Tudo o que vocï¿½ precisa em{" "}
+            <span className="text-lime-500">um sï¿½ app.</span>
           </h2>
           <p className="text-slate-600">
-            Desenvolvemos tecnologias exclusivas para tornar sua jornada gastronômica 
-            mais simples, rápida e personalizada.
+            Desenvolvemos tecnologias exclusivas para tornar sua jornada
+            gastronï¿½mica mais simples, rï¿½pida e personalizada.
           </p>
         </div>
 
         {/* Grid de Funcionalidades */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:bg-white hover:shadow-xl hover:border-lime-200 transition-all duration-300 group"
             >
               <div className="bg-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-sm mb-6 group-hover:scale-110 transition-transform">
@@ -69,7 +75,7 @@ const Funcionalidades = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Funcionalidades
+export default Funcionalidades;

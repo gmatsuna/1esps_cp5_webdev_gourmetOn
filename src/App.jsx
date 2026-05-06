@@ -11,15 +11,25 @@ import Footer from './components/Footer';
 function App() {
   const [comidas, setComidas] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [busca, setBusca] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await getGourmetRecipes("apples");
-      setComidas(response);
-      setLoading(false);
+      setLoading(true);
+      try {
+        const response = await getGourmetRecipes(busca);
+        setComidas(response);
+      } catch (error) {
+        console.error("Erro ao buscar receitas:", error);
+      } finally {
+        setLoading(false);
+      }
     };
-    fetchData();
-  }, []);
+
+    if (busca.trim().length > 0) {
+      fetchData();
+    }
+  }, [busca]);
 
   return (
     <>
@@ -40,6 +50,22 @@ function App() {
               Nossas Recomendações
             </h2>
 
+            <div className="flex flex-col items-center justify-center mb-20 py-3 px-4 space-y-3">
+              <label htmlFor="ingrediente" className="text-lg font-semibold text-gray-800">
+                Digite um ingrediente:
+              </label>
+              <input 
+                type="text" 
+                name="ingrediente" 
+                id="ingrediente" 
+                value={busca}
+                onChange={(e) => setBusca(e.target.value)}
+                className="w-full max-w-lg p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all placeholder:text-gray-400"
+                placeholder="Buscar por ingrediente (ex: apple, banana, tomato)" 
+              />
+            </div>
+
+
             {loading ? (
               <p className="text-center animate-pulse">Carregando cardápio...</p>
             ) : (
@@ -50,7 +76,7 @@ function App() {
                       <img src={item.image} alt={item.title} className="w-full h-52 object-cover" />
                       <div className="p-4">
                         <h3 className="font-bold text-lg text-slate-800 truncate">{item.title}</h3>
-                        <p className="text-orange-600 text-sm font-semibold mt-2">Ver Receita →</p>
+                        <a href='#' className="text-orange-600 text-sm font-semibold mt-2">Adicionar ao carrinho →</a>
                       </div>
                     </div>
                   ))

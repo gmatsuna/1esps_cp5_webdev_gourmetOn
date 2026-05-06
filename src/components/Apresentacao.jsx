@@ -1,13 +1,18 @@
-import { Clock, MapPin, Utensils, ChefHat, CreditCard, ShieldCheck } from 'lucide-react';
+import {
+  Clock,
+  MapPin,
+  Utensils,
+  ChefHat,
+  CreditCard,
+  ShieldCheck,
+} from "lucide-react";
 
 export default function Apresentacao() {
   return (
     <section id="apresentacao" className="py-16 bg-slate-50">
       <div className="container mx-auto px-6 space-y-20">
-
         {/* SUB-SESSÃO 1: Entrega Rápida */}
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16 py-4">
-
           <div className="w-full md:w-1/2 relative group">
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-lime-400/20 rounded-full blur-2xl transition-colors"></div>
 
@@ -24,11 +29,14 @@ export default function Apresentacao() {
             </span>
 
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 leading-tight">
-              Sua comida sempre <span className="text-lime-500">quente e rápida.</span>
+              Sua comida sempre{" "}
+              <span className="text-lime-500">quente e rápida.</span>
             </h2>
 
             <p className="text-slate-600 text-base mb-6 leading-relaxed">
-              Nossa logística inteligente utiliza algoritmos de geolocalização para garantir que o entregador chegue no momento exato em que o prato é finalizado.
+              Nossa logística inteligente utiliza algoritmos de geolocalização
+              para garantir que o entregador chegue no momento exato em que o
+              prato é finalizado.
             </p>
 
             <div className="space-y-3">
@@ -36,13 +44,17 @@ export default function Apresentacao() {
                 <div className="bg-lime-500 p-1.5 rounded-md text-white">
                   <Clock size={18} />
                 </div>
-                <span className="text-slate-700 text-sm font-medium">Média de 25 min por entrega</span>
+                <span className="text-slate-700 text-sm font-medium">
+                  Média de 25 min por entrega
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-lime-500 p-1.5 rounded-md text-white">
                   <MapPin size={18} />
                 </div>
-                <span className="text-slate-700 text-sm font-medium">Rastreamento em tempo real</span>
+                <span className="text-slate-700 text-sm font-medium">
+                  Rastreamento em tempo real
+                </span>
               </div>
             </div>
           </div>
@@ -64,23 +76,29 @@ export default function Apresentacao() {
               Variedade Gourmet
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 leading-tight">
-              Um cardápio para <span className="text-lime-500">todos os gostos.</span>
+              Um cardápio para{" "}
+              <span className="text-lime-500">todos os gostos.</span>
             </h2>
             <p className="text-slate-600 text-base mb-6 leading-relaxed">
-              Explore uma curadoria exclusiva que vai desde a culinária oriental até as opções veganas mais premiadas da cidade.
+              Explore uma curadoria exclusiva que vai desde a culinária oriental
+              até as opções veganas mais premiadas da cidade.
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <div className="bg-lime-500 p-1.5 rounded-md text-white">
                   <Utensils size={18} />
                 </div>
-                <span className="text-slate-700 text-sm font-medium">+500 restaurantes parceiros</span>
+                <span className="text-slate-700 text-sm font-medium">
+                  +500 restaurantes parceiros
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-lime-500 p-1.5 rounded-md text-white">
                   <ChefHat size={18} />
                 </div>
-                <span className="text-slate-700 text-sm font-medium">Chefes renomados</span>
+                <span className="text-slate-700 text-sm font-medium">
+                  Chefes renomados
+                </span>
               </div>
             </div>
           </div>
@@ -104,20 +122,25 @@ export default function Apresentacao() {
               Pagamento simples e <span className="text-lime-500">seguro.</span>
             </h2>
             <p className="text-slate-600 text-base mb-6 leading-relaxed">
-              Aceitamos todas as bandeiras de cartão, PIX e carteiras digitais. Salve seus métodos e peça com um toque.
+              Aceitamos todas as bandeiras de cartão, PIX e carteiras digitais.
+              Salve seus métodos e peça com um toque.
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <div className="bg-lime-500 p-1.5 rounded-md text-white">
                   <CreditCard size={18} />
                 </div>
-                <span className="text-slate-700 text-sm font-medium">Pagamento em 1-clique</span>
+                <span className="text-slate-700 text-sm font-medium">
+                  Pagamento em 1-clique
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-lime-500 p-1.5 rounded-md text-white">
                   <ShieldCheck size={18} />
                 </div>
-                <span className="text-slate-700 text-sm font-medium">Criptografia total</span>
+                <span className="text-slate-700 text-sm font-medium">
+                  Criptografia total
+                </span>
               </div>
             </div>
           </div>

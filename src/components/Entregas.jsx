@@ -8,10 +8,11 @@ const Entregas = () => {
       </div>
       <h3 className="text-white text-2xl font-bold mb-4">Entrega Rápida</h3>
       <p className="text-slate-400 leading-relaxed">
-        Nossa logística inteligente garante que seu prato chegue quente e fresco em menos de 30 minutos.
+        Nossa logística inteligente garante que seu prato chegue quente e fresco
+        em menos de 30 minutos.
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Entregas
+export default Entregas;
