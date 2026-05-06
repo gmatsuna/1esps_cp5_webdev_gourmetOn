@@ -1,16 +1,66 @@
-# React + Vite
+# GourmetOn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 👥 Desenvolvedores
 
-Currently, two official plugins are available:
+- Gilberto Hideaki Matsunaga - RM568191
+- Diogo Henrique Alves Magalhães - RM568541
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O **GourmetOn** é um projeto web acadêmico desenvolvido para facilitar a busca e descoberta de pratos gourmet com base nos ingredientes informados pelo usuário. A aplicação oferece interface moderna, responsiva e componentes reutilizáveis para apresentar destaques, funcionalidades e pratos.
 
-## React Compiler
+> Projeto realizado como Checkpoint 05 no curso de Web Development da **FIAP - Faculdade de Informática e Administração Paulista**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Objetivo
 
-## Expanding the ESLint configuration
+Permitir que usuários busquem pratos a partir de um ingrediente, exibindo resultados com imagem e nome do prato. Quando a API externa atinge limite ou falha, o sistema utiliza dados mock para manter a experiência consistente.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Funcionalidades
+
+- Busca de pratos por ingrediente.
+- Retorno de pratos com imagem e título.
+- Layout responsivo com cards grades.
+- Feedback de carregamento enquanto a API responde.
+- Tratamento de erro e fallback com dados de demonstração.
+
+## 🧩 Tecnologias
+
+- React 19
+- Vite
+- Tailwind CSS
+- JavaScript (ES6+)
+- Lucide React
+
+## 📁 Estrutura do Projeto
+
+- `src/App.jsx` - composiciona a interface principal e controla busca por ingrediente.
+- `src/services/api.jsx` - integração com a API Spoonacular e fallback de dados mock.
+- `src/components/` - conjunto de componentes de interface reutilizáveis.
+- `src/index.css` - estilos globais e importação do Tailwind.
+- `index.html` - arquivo de entrada da aplicação.
+
+## 🚀 Como executar
+
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
+2. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+3. Abra o endereço exibido no terminal para visualizar o site.
+
+## 🛠️ Scripts disponíveis
+
+- `npm run dev` - inicia o servidor de desenvolvimento.
+- `npm run build` - gera a build de produção.
+- `npm run preview` - pré-visualiza a build de produção.
+- `npm run lint` - executa o ESLint no projeto.
+
+## 🔐 API
+
+A busca de pratos utiliza a API do Spoonacular em `src/services/api.jsx`. Caso a chamada à API falhe por limite de requisições ou outro erro, a aplicação retorna um conjunto de pratos de exemplo para não apresentar uma página vazia.
+
+## 📌 Observações
+
+- A aplicação foi construída com foco em usabilidade, design responsivo e modularidade.
+- O projeto usa Tailwind CSS via plugin Vite para geração de utilitários de estilo.
