@@ -17,7 +17,7 @@ export default function Hero() {
             </h1>
             <p className="text-base text-gray-300 max-w-lg mb-5 leading-relaxed">
               Os melhores pratos dos restaurantes exclusivos da cidade com
-              entrega ultra-r�pida.
+              entrega ultra-rápida.
             </p>
             <button className="bg-lime-400 text-black px-6 py-3 rounded-full font-bold text-base hover:scale-105 transition cursor-pointer shadow-lg shadow-lime-400/20">
               Download App

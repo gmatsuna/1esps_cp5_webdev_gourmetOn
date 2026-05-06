@@ -1,10 +1,24 @@
-const API_KEY = '355c6adf649d4dcba9966a2d41b72d5b'; // Pegue em spoonacular.com/food-api
+const API_KEY = '7312780ac08d4cfdb8e39e535de04e1b'; // Pegue em spoonacular.com/food-api
 const BASE_URL = 'https://api.spoonacular.com/recipes/findByIngredients';
+
+const translateIngredient = async (ingredientPt) => {
+    try {
+        const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(ingredientPt)}&langpair=pt|en`;
+        const res = await fetch(url);
+        const data = await res.json();
+        
+        return data.responseData.translatedText;
+    } catch (error) {
+        console.error("Erro na MyMemory:", error);
+        return ingredientPt;
+    }
+};
 
 export const getGourmetRecipes = async (ingredient) => {
 
     try {
-        const response = await fetch(`${BASE_URL}?ingredients=${ingredient}&number=6&apiKey=${API_KEY}`);
+        const ingredientEn = await translateIngredient(ingredient)
+        const response = await fetch(`${BASE_URL}?ingredients=${ingredientEn}&number=6&apiKey=${API_KEY}`);
         
         if (!response.ok) {
         // Se der erro 402 ou qualquer outro, ele cai aqui e pula para o 'catch'
