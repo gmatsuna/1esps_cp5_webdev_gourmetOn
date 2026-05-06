@@ -11,7 +11,7 @@ export default function Apresentacao() {
   return (
     <section id="apresentacao" className="py-16 bg-slate-50">
       <div className="container mx-auto px-6 space-y-20">
-        {/* SUB-SESSÃO 1: Entrega Rápida */}
+        {/* SUB-SESSÂO 1: Entrega Rápida */}
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16 py-4">
           <div className="w-full md:w-1/2 relative group">
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-lime-400/20 rounded-full blur-2xl transition-colors"></div>
@@ -60,7 +60,7 @@ export default function Apresentacao() {
           </div>
         </div>
 
-        {/* SUB-SESSÃO 2: Variedade */}
+        {/* SUB-SESSÂO 2: Variedade */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16 py-4">
           <div className="w-full md:w-1/2 relative group">
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-lime-400/20 rounded-full blur-2xl transition-colors"></div>
@@ -104,7 +104,7 @@ export default function Apresentacao() {
           </div>
         </div>
 
-        {/* SUB-SESSÃO 3: Pagamento */}
+        {/* SUB-SESSÂO 3: Pagamento */}
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16 py-4">
           <div className="w-full md:w-1/2 relative group">
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-lime-400/20 rounded-full blur-2xl transition-colors"></div>

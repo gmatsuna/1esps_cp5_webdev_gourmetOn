@@ -10,15 +10,15 @@ const Funcionalidades = () => {
     },
     {
       icon: <Filter className="text-lime-600" size={24} />,
-      title: "Filtros Avan�ados",
+      title: "Filtros Avançados",
       description:
-        "Refine sua escolha por pre�o, tempo de entrega, avalia��o ou restri��es alimentares.",
+        "Refine sua escolha por preço, tempo de entrega, avaliação ou restrições alimentares.",
     },
     {
       icon: <Bell className="text-lime-600" size={24} />,
       title: "Status em Tempo Real",
       description:
-        "Receba notifica��es desde o preparo na cozinha at� a chegada na sua porta.",
+        "Receba notificações desde o preparo na cozinha até a chegada na sua porta.",
     },
     {
       icon: <Heart className="text-lime-600" size={24} />,
@@ -28,29 +28,29 @@ const Funcionalidades = () => {
     },
     {
       icon: <Star className="text-lime-600" size={24} />,
-      title: "Avalia��es Reais",
+      title: "Avaliações Reais",
       description:
-        "Confira fotos e opini�es de outros clientes para garantir a melhor experi�ncia.",
+        "Confira fotos e opiniões de outros clientes para garantir a melhor experiência.",
     },
     {
       icon: <Smartphone className="text-lime-600" size={24} />,
-      title: "Experi�ncia Mobile",
+      title: "Experiência Mobile",
       description:
-        "Interface otimizada para voc� pedir de qualquer lugar com total fluidez.",
+        "Interface otimizada para você pedir de qualquer lugar com total fluidez.",
     },
   ];
   return (
     <section id="funcionalidades" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        {/* Cabe�alho da Se��o */}
+        {/* Cabeçalho da Seção */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Tudo o que voc� precisa em{" "}
-            <span className="text-lime-500">um s� app.</span>
+            Tudo o que você precisa em{" "}
+            <span className="text-lime-500">um só app.</span>
           </h2>
           <p className="text-slate-600">
             Desenvolvemos tecnologias exclusivas para tornar sua jornada
-            gastron�mica mais simples, r�pida e personalizada.
+            gastronômica mais simples, rápida e personalizada.
           </p>
         </div>
 

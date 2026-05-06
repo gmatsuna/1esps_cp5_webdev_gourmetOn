@@ -16,8 +16,8 @@ const Contato = () => {
               </h2>
               <p className="text-slate-300 text-lg mb-8">
                 Assine nossa newsletter e receba cupons de desconto exclusivos,
-                al�m de ser o primeiro a saber sobre novos restaurantes na sua
-                regi�o.
+                além de ser o primeiro a saber sobre novos restaurantes na sua
+                região.
               </p>
 
               <div className="hidden md:flex flex-col gap-4 text-slate-300">
@@ -49,9 +49,8 @@ const Contato = () => {
                 </button>
               </form>
 
-              {/* Texto de rodap� com cor mais clara (slate-400) para melhor leitura */}
               <p className="text-center text-slate-400 text-sm mt-4">
-                Prometemos n�o enviar spam. Voc�; pode cancelar a qualquer
+                Prometemos não enviar spam. Você pode cancelar a qualquer
                 momento.
               </p>
             </div>

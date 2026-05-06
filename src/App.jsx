@@ -61,7 +61,7 @@ function App() {
 
             <div className="flex flex-col items-center justify-center mb-20 py-3 px-4 space-y-3">
               <label htmlFor="ingrediente" className="block mb-2 text-sm font-bold uppercase tracking-wider text-slate-500 ml-1">
-                O que vamos cozinhar hoje?
+                O que vamos comer hoje?
               </label>
               <input 
                 type="text" 
@@ -70,7 +70,7 @@ function App() {
                 value={busca}
                 onChange={(e) => setBusca(e.target.value)}
                 className="w-full max-w-lg p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all placeholder:text-gray-400"
-                placeholder="Buscar por ingrediente (ex: maça, banana, frango)" 
+                placeholder="Buscar por ingrediente (ex: maçã, banana, frango)" 
               />
             </div>
 
@@ -87,7 +87,7 @@ function App() {
                       <img src={item.image} alt={item.title} className="w-full h-52 object-cover" />
                       <div className="p-4">
                         <h3 className="font-bold text-lg text-slate-800 truncate">{item.title}</h3>
-                        <a href='#' className="text-orange-600 text-sm font-semibold mt-2 inline-block">Adicionar ao carrinho →</a>
+                        <a href='#' className="text-orange-600 text-sm font-semibold mt-2 inline-block">Adicionar ao carrinho</a>
                       </div>
                     </div>
                   ))

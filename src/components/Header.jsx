@@ -37,7 +37,7 @@ export default function Header() {
             App
           </a>
           <a href="#funcionalidades" className="hover:text-lime-400">
-            Funções
+            Funcionalidades
           </a>
           <a href="#depoimentos" className="hover:text-lime-400">
             Depoimentos

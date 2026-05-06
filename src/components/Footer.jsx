@@ -17,12 +17,12 @@ const Footer = () => {
               Gourmet<span className="text-lime-500">On</span>
             </h3>
             <p className="text-sm leading-relaxed">
-              A melhor experi&ecirc;ncia gastron&ocirc;mica na palma da sua
-              m&atilde;o. Conectando voc&ecirc; aos melhores sabores da cidade.
+              A melhor experiência gastronômica na palma da sua
+              mão. Conectando você aos melhores sabores da cidade.
             </p>
           </div>
 
-          {/* Coluna 2: Links R�pidos (Termos) */}
+          {/* Coluna 2: Links Rï¿½pidos (Termos) */}
           <div>
             <h4 className="text-white font-bold mb-6 italic tracking-wider">
               INSTITUCIONAL
@@ -35,7 +35,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="hover:text-lime-400 transition-colors">
-                  Pol&iacute;tica de Privacidade
+                  Política de Privacidade
                 </a>
               </li>
               <li>
@@ -67,7 +67,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <MapPin size={16} className="text-lime-500" />
-                <span>S&atilde;o Paulo, SP</span>
+                <span>São Paulo, SP</span>
               </li>
             </ul>
           </div>
